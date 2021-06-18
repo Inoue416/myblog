@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>レビュー  だらだらライフ</title>
+    <meta name="description" content="色々な情報を発信">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href=index.html><img class="logo" src="./images/logo.png" alt="だらだらライフ"></a></h1>
+      <nav>
+        <ul class=main-nav>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="contact.html">レビュー</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr></hr>
+    <div class="wrapper">
+    <div class="main-cont">
+    <div class=cont-title><h1>レビュー</h1></div>
+    <p>
+      &emsp;ここでは、当サイトのレビューが投稿できる場となっております。<br>
+      当サイトをより良いものにするために、コンテンツ内容についてやレイアウト、<br>
+      追加して欲しいコンテンツ、サイト内のミスなど些細なことでも良いので、<br>
+      何でも気軽に書いていただけると幸いです。<br>
+      (250文字以内での入力をお願いします。)
+    </p>
+    <!--TODO書き込み内容を表示する処理とレイアウトを作成する-->
+    <form class="review" action="review.php" method="post">
+    <div class="review_area">
+      <textarea id="review_main" name="review_cont" rows="8" cols="80" maxlength="250"></textarea>
+    </div>
+    <div class="submit_area">
+      <p>入力文字数 <span id="textLength">0</span>/250</p>
+      <span id="overlen"></span>
+      <input type="submit" value="送信">
+    </div>
+    </form>
+    </div>
+    <aside>
+      <h3 class="sub-title">コンテンツ</h3>
+      <ul class="sub-menu">
+        <li><a href="travel.html">旅行</a></li>
+        <li><a href="game.html">ゲーム・漫画・アニメ</a></li>
+        <li><a href="knowledge.html">雑学</a></li>
+      </ul>
+    </aside>
+    </div>
+    <footer>
+      <a href="https://twitter.com/daradara_life11?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-lang="en" data-show-count="false">Follow @daradara_life11</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <p><small>&copy; だらだらライフ</small></p>
+    </footer>
+  </body>
+</html>
